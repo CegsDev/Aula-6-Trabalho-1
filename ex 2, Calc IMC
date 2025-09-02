@@ -1,0 +1,17 @@
+// ----------------------------
+// Exercício 2 - Calculadora de IMC
+// ----------------------------
+$peso = 75;
+$altura = 1.75;
+
+$imc = $peso / ($altura * $altura);
+
+if ($imc < 18.5) {
+    echo "Abaixo do peso<br>";
+} elseif ($imc >= 18.5 && $imc <= 24.9) {
+    echo "Peso normal<br>";
+} elseif ($imc >= 25 && $imc <= 29.9) {
+    echo "Sobrepeso<br>";
+} else {
+    echo "Obesidade<br>";
+}
