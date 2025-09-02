@@ -1,0 +1,15 @@
+<?php
+// ----------------------------
+// Exercício 1 - Verificador de Semáforo
+// ----------------------------
+$cor = "verde"; // pode ser: vermelho, amarelo, verde
+
+if ($cor == "vermelho") {
+    echo "Pare!<br>";
+} elseif ($cor == "amarelo") {
+    echo "Atenção!<br>";
+} elseif ($cor == "verde") {
+    echo "Siga!<br>";
+} else {
+    echo "Cor inválida.<br>";
+}
