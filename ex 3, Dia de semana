@@ -1,0 +1,47 @@
+<?php
+// Script único e funcional para Exercício 3 (Dia da semana)
+
+/*
+Regras:
+1 = Domingo, 2 = Segunda, ..., 7 = Sábado
+Para 2..6 imprimir "Nome do dia - Dia útil."
+Para 1 e 7 imprimir "Nome do dia - Fim de semana!"
+Default: "Número inválido"
+*/
+
+$dia_semana = 3; // mude aqui para testar: 1..7
+
+switch ($dia_semana) {
+    case 1:
+        echo "Domingo - Fim de semana!<br>";
+        break;
+
+    case 2:
+        echo "Segunda-feira - Dia útil.<br>";
+        break;
+
+    case 3:
+        echo "Terça-feira - Dia útil.<br>";
+        break;
+
+    case 4:
+        echo "Quarta-feira - Dia útil.<br>";
+        break;
+
+    case 5:
+        echo "Quinta-feira - Dia útil.<br>";
+        break;
+
+    case 6:
+        echo "Sexta-feira - Dia útil.<br>";
+        break;
+
+    case 7:
+        echo "Sábado - Fim de semana!<br>";
+        break;
+
+    default:
+        echo "Número inválido. Use 1 a 7.<br>";
+        break;
+}
+?>
