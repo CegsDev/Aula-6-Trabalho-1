@@ -1,0 +1,18 @@
+<?php
+// Exercício 4 - Lógica de Desconto
+
+$valor_compra = 200;      // pode mudar pra testar
+$possui_cupom = true;     // true ou false
+
+if ($valor_compra > 150 || $possui_cupom == true) {
+    $desconto = 0.10;
+    $valor_final = $valor_compra - ($valor_compra * $desconto);
+
+    echo "Valor original: R$ " . number_format($valor_compra, 2, ',', '.') . "<br>";
+    echo "Desconto aplicado: 10%<br>";
+    echo "Valor final a pagar: R$ " . number_format($valor_final, 2, ',', '.') . "<br>";
+} else {
+    echo "Valor original: R$ " . number_format($valor_compra, 2, ',', '.') . "<br>";
+    echo "Nenhum desconto aplicado.<br>";
+}
+?>
